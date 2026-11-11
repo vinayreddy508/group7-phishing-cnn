@@ -4,31 +4,31 @@
 2. **Runtime → Change runtime type → T4 GPU** if available.
 3. In a code cell, run:
 
-\`\`\`python
+```python
 !git clone https://github.com/vinayreddy508/group7-phishing-cnn.git
 %cd /content/group7-phishing-cnn
 !pip install -q -r requirements.txt
-\`\`\`
+```
 
 4. Obtain the official PhiUSIIL dataset (UCI #967):
 
-\`\`\`python
+```python
 !python scripts/download_data.py
-\`\`\`
+```
 
 5. Verify the pipeline quickly:
 
-\`\`\`python
+```python
 !python scripts/run_experiments.py --quick --output runs/smoke
-\`\`\`
+```
 
 6. Run the main experiments (full dataset, 3 seeds):
 
-\`\`\`python
+```python
 !python scripts/run_experiments.py --output runs/domain_disjoint
-\`\`\`
+```
 
-7. Inspect \`runs/domain_disjoint/\` for actual result CSVs, figures, split diagnostics and robustness results. Local outputs are ignored by Git and should not be pushed.
+7. Inspect `runs/domain_disjoint/` for actual result CSVs, figures, split diagnostics and robustness results. Local outputs are ignored by Git and should not be pushed.
 
 8. Export important final summary tables and charts to your own computer/Drive for the report, without uploading the raw dataset or row-level URL predictions to GitHub.
 
