@@ -1,0 +1,25 @@
+{
+  "seed": 42,
+  "seeds": [42, 123, 2026],
+  "train_fraction": 0.7,
+  "validation_fraction": 0.15,
+  "test_fraction": 0.15,
+  "group_split_candidates": 20,
+  "max_length": 250,
+  "length_train_percentile": 99,
+  "embedding_dim": 64,
+  "filters": 64,
+  "dense_units": 64,
+  "dropout": 0.5,
+  "learning_rate": 0.001,
+  "batch_size": 128,
+  "epochs": 15,
+  "early_stopping_patience": 3,
+  "tfidf_max_features": 50000,
+  "width_configs": {
+    "w3": [3],
+    "w5": [5],
+    "w7": [7],
+    "multi_357": [3, 5, 7]
+  }
+}

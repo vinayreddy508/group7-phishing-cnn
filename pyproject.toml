@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phishcnn-group7"
+version = "0.1.0"
+description = "Bias-aware character CNN experiments for PhiUSIIL phishing URL detection"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+
+[tool.setuptools.packages.find]
+where = ["src"]
